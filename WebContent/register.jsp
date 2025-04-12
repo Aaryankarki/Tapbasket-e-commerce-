@@ -280,19 +280,18 @@
                     <div class="footer-section">
                         <h3 class="footer-title">Categories</h3>
                         <ul class="footer-links">
-                            <li class="footer-link"><a href="index.jsp?type=mobile">Mobiles</a></li>
-                            <li class="footer-link"><a href="index.jsp?type=laptop">Laptops</a></li>
+                            <!-- <li class="footer-link"><a href="index.jsp?type=mobile">Mobiles</a></li>
+                            <li class="footer-link"><a href="index.jsp?type=laptop">Laptops</a></li> -->
                             <li class="footer-link"><a href="index.jsp?type=tv">TVs</a></li>
-                            <li class="footer-link"><a href="index.jsp?type=camera">Cameras</a></li>
+                            <!-- <li class="footer-link"><a href="index.jsp?type=camera">Cameras</a></li> -->
                         </ul>
                     </div>
 
                     <div class="footer-section">
                         <h3 class="footer-title">Contact Us</h3>
                         <ul class="footer-links">
-                            <li class="footer-link"><i class="fas fa-map-marker-alt"></i> 123 Electronics Street, Tech
-                                City</li>
-                            <li class="footer-link"><i class="fas fa-phone"></i> +1 234 567 8900</li>
+                            <li class="footer-link"><i class="fas fa-map-marker-alt"></i> Aaryan, Itahari City</li>
+                            <li class="footer-link"><i class="fas fa-phone"></i> +9779810546861</li>
                             <li class="footer-link"><i class="fas fa-envelope"></i> info@tapbasket.com</li>
                         </ul>
                     </div>

@@ -1,6 +1,7 @@
 package com.aaryan.beans;
 
 import java.io.Serializable;
+//cart bins
 
 @SuppressWarnings("serial")
 public class CartBean implements Serializable {
