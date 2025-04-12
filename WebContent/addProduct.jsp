@@ -327,13 +327,13 @@
                             <div class="input-group">
                               
                                 <select id="productType" name="type" class="form-control input-with-icon" required>
-                                    <option value="mobile">Mobile</option>
+                                    <!-- <option value="mobile">Mobile</option> -->
                                     <option value="tv">TV</option>
-                                    <option value="camera">Camera</option>
+                                   <!--  <option value="camera">Camera</option>
                                     <option value="laptop">Laptop</option>
                                     <option value="tablet">Tablet</option>
                                     <option value="speaker">Speaker</option>
-                                    <option value="other">Other Appliances</option>
+                                    <option value="other">Other Appliances</option> -->
                                 </select>
                             </div>
                         </div>
