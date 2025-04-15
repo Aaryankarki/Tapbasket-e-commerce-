@@ -12,6 +12,7 @@ public class DemandBean implements Serializable {
 	public DemandBean() {
 		super();
 	}
+	//constructor of demand bean
 
 	public DemandBean(String userName, String prodId, int demandQty) {
 		super();
