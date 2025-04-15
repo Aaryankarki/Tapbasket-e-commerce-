@@ -14,6 +14,7 @@ public class CartBean implements Serializable {
 	public String prodId;
 
 	public int quantity;
+	// i have used both the getter and setter methods
 
 	public String getUserId() {
 		return userId;
@@ -38,7 +39,7 @@ public class CartBean implements Serializable {
 	public void setQuantity(int quantity) {
 		this.quantity = quantity;
 	}
-
+// constructor of cart bean
 	public CartBean(String userId, String prodId, int quantity) {
 		super();
 		this.userId = userId;
