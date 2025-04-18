@@ -53,19 +53,9 @@
 					<!-- Category Pills -->
 					<div class="container">
 						<div class="category-pills">
-							<a href="index.jsp" class="category-pill <%= type == null ? " active" : "" %>">All</a>
-							<%-- <a href="index.jsp?type=mobile" class="category-pill <%= " mobile".equals(type) ? "active"
-								: "" %>">Mobiles</a> --%>
-							<a href="index.jsp?type=tv" class="category-pill <%= " tv".equals(type) ? "active" : ""
-								%>">TVs</a>
-						<%-- 	<a href="index.jsp?type=laptop" class="category-pill <%= " laptop".equals(type) ? "active"
-								: "" %>">Laptops</a>
-							<a href="index.jsp?type=camera" class="category-pill <%= " camera".equals(type) ? "active"
-								: "" %>">Cameras</a>
-							<a href="index.jsp?type=speaker" class="category-pill <%= " speaker".equals(type) ? "active"
-								: "" %>">Speakers</a>
-							<a href="index.jsp?type=tablet" class="category-pill <%= " tablet".equals(type) ? "active"
-								: "" %>">Tablets</a> --%>
+							<a href="index.jsp" class="category-pill <%= type == null ? " active" : "" %>">All</a>    
+                            <a href="index.jsp" class="category-pill <%= type == null ? " active" : "" %>">TV</a>    							
+					
 						</div>
 					</div>
 

@@ -53,18 +53,8 @@
                     <div class="container">
                         <div class="category-pills">
                             <a href="userHome.jsp" class="category-pill <%= type == null ? " active" : "" %>">All</a>
-                            <%-- <a href="userHome.jsp?type=mobile" class="category-pill <%= " mobile".equals(type)
-                                ? "active" : "" %>">Mobiles</a> --%>
-                            <a href="userHome.jsp?type=tv" class="category-pill <%= " tv".equals(type) ? "active" : ""
-                                %>">TVs</a>
-                            <%-- <a href="userHome.jsp?type=laptop" class="category-pill <%= " laptop".equals(type)
-                                ? "active" : "" %>">Laptops</a>
-                            <a href="userHome.jsp?type=camera" class="category-pill <%= " camera".equals(type)
-                                ? "active" : "" %>">Cameras</a>
-                            <a href="userHome.jsp?type=speaker" class="category-pill <%= " speaker".equals(type)
-                                ? "active" : "" %>">Speakers</a>
-                            <a href="userHome.jsp?type=tablet" class="category-pill <%= " tablet".equals(type)
-                                ? "active" : "" %>">Tablets</a> --%>
+                              <a href="userHome.jsp" class="category-pill <%= type == null ? " active" : "" %>">TV</a>
+                        
                         </div>
                     </div>
 

@@ -277,7 +277,7 @@ public class ProductServiceImpl implements ProductService {
 
 		try {
 			ps = con.prepareStatement(
-					"SELECT * FROM `shopping-cart`.product where lower(ptype) like ? or lower(pname) like ? or lower(pinfo) like ?");
+					"SELECT * FROM product where lower(ptype) like ? or lower(pname) like ? or lower(pinfo) like ?");
 			search = "%" + search + "%";
 			ps.setString(1, search);
 			ps.setString(2, search);

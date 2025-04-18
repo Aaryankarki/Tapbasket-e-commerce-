@@ -4,8 +4,8 @@
 	<artifactId>shopping-cart</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>Shopping Cart</name>
-	<description>A Shopping Cart Project in Java by Bitter Code</description>
+	<name>TapBasket</name>
+	<description>A Tapbasket Project in Java by Bitter Code</description>
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<resources>
@@ -70,6 +70,13 @@
 			<artifactId>jaxws-api</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mindrot/jbcrypt -->
+<dependency>
+    <groupId>org.mindrot</groupId>
+    <artifactId>jbcrypt</artifactId>
+    <version>0.4</version>
+</dependency>
 
 
 		<dependency>

@@ -5,6 +5,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import org.mindrot.jbcrypt.BCrypt;
+
 import com.aaryan.beans.UserBean;
 import com.aaryan.constants.IUserConstants;
 import com.aaryan.service.UserService;
@@ -50,7 +52,8 @@ public class UserServiceImpl implements UserService {
 			ps.setLong(3, user.getMobile());
 			ps.setString(4, user.getAddress());
 			ps.setInt(5, user.getPinCode());
-			ps.setString(6, user.getPassword());
+			String hashedPassword = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
+			ps.setString(6, hashedPassword);
 
 			int k = ps.executeUpdate();
 
@@ -227,5 +230,6 @@ public class UserServiceImpl implements UserService {
 
 		return userAddr;
 	}
+	
 
 }
