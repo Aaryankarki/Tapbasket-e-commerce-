@@ -43,7 +43,7 @@
 					}
 
 					if (products.isEmpty()) {
-					message = "No items found for the search '" + (search != null ? search : type) + "'";
+					message = "No items found for the search" + (search != null ? search : type) + "'";
 					products = prodDao.getAllProducts();
 					}
 					%>

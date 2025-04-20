@@ -235,7 +235,7 @@ public class ProductServiceImpl implements ProductService {
 
 		try {
 			// Use exact match for type instead of LIKE
-			ps = con.prepareStatement("SELECT * FROM `shopping-cart`.product where lower(ptype) = lower(?)");
+			ps = con.prepareStatement("SELECT * FROM product where lower(ptype) = lower(?)");
 			ps.setString(1, type);
 			rs = ps.executeQuery();
 
