@@ -8,7 +8,7 @@ public class UserBean implements Serializable {
 	public UserBean() {
 	}
 
-	public UserBean(String userName, Long mobileNo, String emailId, String address, int pinCode, String password) {
+	public UserBean(String userName, String mobileNo, String emailId, String address, int pinCode, String password) {
 		super();
 		this.name = userName;
 		this.mobile = mobileNo;
@@ -17,14 +17,27 @@ public class UserBean implements Serializable {
 		this.pinCode = pinCode;
 		this.password = password;
 	}
+	
+
+	public UserBean(String name, String mobile, String email, String address, int pinCode, String password, String role) {
+		super();
+		this.name = name;
+		this.mobile = mobile;
+		this.email = email;
+		this.address = address;
+		this.pinCode = pinCode;
+		this.password = password;
+		this.role = role;
+	}
+
 
 	private String name;
-	private Long mobile;
+	private String mobile;
 	private String email;
 	private String address;
 	private int pinCode;
 	private String password;
-
+	private String role;
 	public String getName() {
 		return name;
 	}
@@ -33,11 +46,11 @@ public class UserBean implements Serializable {
 		this.name = name;
 	}
 
-	public Long getMobile() {
+	public String getMobile() {
 		return mobile;
 	}
 
-	public void setMobile(Long mobile) {
+	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
@@ -72,5 +85,15 @@ public class UserBean implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	} 
+
+
 
 }

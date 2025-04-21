@@ -24,15 +24,16 @@ public class RegisterSrv extends HttpServlet {
 
 		response.setContentType("text/html");
 		String userName = request.getParameter("username");
-		Long mobileNo = Long.parseLong(request.getParameter("mobile"));
+		String mobileNo = request.getParameter("mobile");
 		String emailId = request.getParameter("email");
 		String address = request.getParameter("address");
 		int pinCode = Integer.parseInt(request.getParameter("pincode"));
 		String password = request.getParameter("password");
 		String confirmPassword = request.getParameter("confirmPassword");
+		String role = request.getParameter("role");
 		String status = "";
 		if (password != null && password.equals(confirmPassword)) {
-			UserBean user = new UserBean(userName, mobileNo, emailId, address, pinCode, password);
+			UserBean user = new UserBean(userName, mobileNo, emailId, address, pinCode, password,role);
 
 			UserServiceImpl dao = new UserServiceImpl();
 
