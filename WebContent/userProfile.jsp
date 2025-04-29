@@ -130,7 +130,15 @@
     UserService dao=new UserServiceImpl(); 
     UserBean user=dao.getUserDetails(userName, password); 
     if (user==null) 
+<<<<<<< HEAD
+<<<<<<< HEAD
         user=new UserBean("Test User", "98765498765L", "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
+=======
+        user=new UserBean("Test User", 98765498765L, "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
+>>>>>>> initial1
+=======
+        user=new UserBean("Test User", "98765498765L", "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
     %>
 
     <jsp:include page="header.jsp" />

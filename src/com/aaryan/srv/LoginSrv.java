@@ -10,8 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+<<<<<<< HEAD
+<<<<<<< HEAD
 import org.mindrot.jbcrypt.BCrypt;
 
+=======
+>>>>>>> initial1
+=======
+import org.mindrot.jbcrypt.BCrypt;
+
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 import com.aaryan.beans.UserBean;
 import com.aaryan.service.impl.UserServiceImpl;
 
@@ -31,13 +39,24 @@ public class LoginSrv extends HttpServlet {
 
 		String userName = request.getParameter("username");
 		String password = request.getParameter("password");
+<<<<<<< HEAD
+<<<<<<< HEAD
 		
+=======
+>>>>>>> initial1
+=======
+		
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 		String userType = request.getParameter("usertype");
 		response.setContentType("text/html");
 
 		String status = "Login Denied! Invalid Username or password.";
 
 		if (userType.equals("admin")) { // Login as Admin
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 
 			
 				// valid
@@ -56,10 +75,32 @@ public class LoginSrv extends HttpServlet {
 
 					session.setAttribute("userdata", user);
 
+<<<<<<< HEAD
+=======
+			
+
+			if (userName.equals("admin@gmail.com")) {
+				UserServiceImpl udao = new UserServiceImpl();
+
+				status = udao.isValidCredential(userName, password);
+
+				if (status.equalsIgnoreCase("valid")) {
+
+					RequestDispatcher rd = request.getRequestDispatcher("adminViewProduct.jsp");
+
+					HttpSession session = request.getSession();
+
+>>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 					session.setAttribute("username", userName);
 					session.setAttribute("password", password);
 					session.setAttribute("usertype", userType);
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 					
 				RequestDispatcher requestDispatcher = request.getRequestDispatcher("adminViewProduct.jsp");
 
@@ -70,6 +111,24 @@ public class LoginSrv extends HttpServlet {
 
 				requestDispatcher.forward(request, response);
 
+<<<<<<< HEAD
+=======
+					rd.forward(request, response);
+					
+				}
+				else {
+					RequestDispatcher rd = request.getRequestDispatcher("login.jsp?message=" + status);
+					rd.include(request, response);
+				}
+				// valid
+
+			} else {
+				// Invalid;
+				RequestDispatcher rd = request.getRequestDispatcher("login.jsp?message=" + status);
+				rd.include(request, response);
+>>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 			}
 
 		} else { // Login as customer
@@ -77,13 +136,27 @@ public class LoginSrv extends HttpServlet {
 			UserServiceImpl udao = new UserServiceImpl();
 
 			status = udao.isValidCredential(userName, password);
+<<<<<<< HEAD
+<<<<<<< HEAD
 //			System.out.println(status);
+=======
+>>>>>>> initial1
+=======
+//			System.out.println(status);
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 
 			if (status.equalsIgnoreCase("valid")) {
 				// valid user
 
 				UserBean user = udao.getUserDetails(userName, password);
+<<<<<<< HEAD
+<<<<<<< HEAD
 	
+=======
+>>>>>>> initial1
+=======
+	
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 
 				HttpSession session = request.getSession();
 
