@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 <!DOCTYPE html>
 <html lang="en">
 
@@ -223,6 +226,7 @@
                                 <li>At least one number</li>
                                 <li>At least one special character</li>
                             </ul>
+<<<<<<< HEAD
 =======
     <!DOCTYPE html>
     <html lang="en">
@@ -414,10 +418,13 @@
                                 <input type="tel" id="mobile" name="mobile" class="form-control"
                                     placeholder="Enter your mobile number" required>
                             </div>
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
                         </div>
                     </div>
 
                     <div class="form-group">
+<<<<<<< HEAD
                         <label for="address" class="form-label">Address</label>
                         <div class="input-group">
                             <i class="fas fa-map-marker-alt input-icon"></i>
@@ -429,6 +436,8 @@
 
                     <div class="form-group">
 <<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                         <div class="input-group">
                             <i class="fas fa-lock input-icon"></i>
@@ -578,6 +587,7 @@
 </body>
 
 </html>
+<<<<<<< HEAD
 =======
                         <label for="pincode" class="form-label">Pincode</label>
                         <div class="input-group">
@@ -757,3 +767,5 @@
 
     </html>
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc

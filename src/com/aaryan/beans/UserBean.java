@@ -9,10 +9,14 @@ public class UserBean implements Serializable {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public UserBean(String userName, String mobileNo, String emailId, String address, int pinCode, String password) {
 =======
 	public UserBean(String userName, Long mobileNo, String emailId, String address, int pinCode, String password) {
 >>>>>>> initial1
+=======
+	public UserBean(String userName, String mobileNo, String emailId, String address, int pinCode, String password) {
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 		super();
 		this.name = userName;
 		this.mobile = mobileNo;
@@ -22,6 +26,9 @@ public class UserBean implements Serializable {
 		this.password = password;
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	
 
 	public UserBean(String name, String mobile, String email, String address, int pinCode, String password, String role) {
@@ -38,20 +45,27 @@ public class UserBean implements Serializable {
 
 	private String name;
 	private String mobile;
+<<<<<<< HEAD
 =======
 
 	private String name;
 	private Long mobile;
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	private String email;
 	private String address;
 	private int pinCode;
 	private String password;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	private String role;
 =======
 
 >>>>>>> initial1
+=======
+	private String role;
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	public String getName() {
 		return name;
 	}
@@ -61,11 +75,15 @@ public class UserBean implements Serializable {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	public String getMobile() {
 		return mobile;
 	}
 
 	public void setMobile(String mobile) {
+<<<<<<< HEAD
 =======
 	public Long getMobile() {
 		return mobile;
@@ -73,6 +91,8 @@ public class UserBean implements Serializable {
 
 	public void setMobile(Long mobile) {
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 		this.mobile = mobile;
 	}
 
@@ -109,6 +129,9 @@ public class UserBean implements Serializable {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	public String getRole() {
 		return role;
 	}
@@ -119,7 +142,11 @@ public class UserBean implements Serializable {
 
 
 
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> initial1
+=======
+}
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc

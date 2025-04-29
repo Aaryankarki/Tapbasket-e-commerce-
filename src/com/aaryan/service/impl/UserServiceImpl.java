@@ -9,9 +9,12 @@ import org.mindrot.jbcrypt.BCrypt;
 
 import com.aaryan.beans.UserBean;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import com.aaryan.constants.IUserConstants;
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 import com.aaryan.service.UserService;
 import com.aaryan.utility.DBUtil;
 // Removed mailing import
@@ -20,16 +23,22 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	public String registerUser(String userName,  String mobileNo, String emailId, String address, int pinCode,
 			String password,String role) {
 
 		UserBean user = new UserBean(userName, mobileNo, emailId, address, pinCode, password,role);
+<<<<<<< HEAD
 =======
 	public String registerUser(String userName, Long mobileNo, String emailId, String address, int pinCode,
 			String password) {
 
 		UserBean user = new UserBean(userName, mobileNo, emailId, address, pinCode, password);
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 
 		String status = registerUser(user);
 
@@ -40,6 +49,9 @@ public class UserServiceImpl implements UserService {
 	public String registerUser(UserBean user) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	    String status = "User Registration Failed!";
 
 	    boolean isRegtd = isRegistered(user.getEmail());
@@ -90,6 +102,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 
+<<<<<<< HEAD
 =======
 		String status = "User Registration Failed!";
 
@@ -137,6 +150,8 @@ public class UserServiceImpl implements UserService {
 	}
 
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	@Override
 	public boolean isRegistered(String emailId) {
 		boolean flag = false;
@@ -180,13 +195,17 @@ public class UserServiceImpl implements UserService {
 	        ps = con.prepareStatement("select password from user where email=?");
 	        ps.setString(1, emailId);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	        rs = ps.executeQuery();
 
 	        if (rs.next()) {
 	            String hashedPassword = rs.getString("password");
+<<<<<<< HEAD
 <<<<<<< HEAD
 	           System.out.println(hashedPassword);
 	           System.out.println(BCrypt.checkpw(password, hashedPassword));
@@ -195,6 +214,11 @@ public class UserServiceImpl implements UserService {
 
 	            // Check if hashed password matches
 >>>>>>> initial1
+=======
+	           System.out.println(hashedPassword);
+	           System.out.println(BCrypt.checkpw(password, hashedPassword));
+
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	            if (BCrypt.checkpw(password, hashedPassword)) {
 	                status = "valid";
 	            }
@@ -204,6 +228,9 @@ public class UserServiceImpl implements UserService {
 	        status = "Error: " + e.getMessage();
 	        e.printStackTrace();
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 	    }
 
 	    DBUtil.closeConnection(con);
@@ -253,6 +280,7 @@ public class UserServiceImpl implements UserService {
 	}
 
 
+<<<<<<< HEAD
 =======
 	    } finally {
 	        DBUtil.closeConnection(con);
@@ -302,6 +330,8 @@ public class UserServiceImpl implements UserService {
 		return user;
 	}
 >>>>>>> initial1
+=======
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 
 	@Override
 	public String getFName(String emailId) {
@@ -360,9 +390,14 @@ public class UserServiceImpl implements UserService {
 	}
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	
 	
 =======
 >>>>>>> initial1
+=======
+	
+	
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 
 }

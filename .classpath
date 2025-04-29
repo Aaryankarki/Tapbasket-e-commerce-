@@ -20,6 +20,7 @@
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 =======
 		</attributes>
@@ -39,6 +40,9 @@
 			<attribute name="ignore_optional_problems" value="true"/>
 			<attribute name="m2e-apt" value="true"/>
 >>>>>>> initial1
+=======
+			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
+>>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
