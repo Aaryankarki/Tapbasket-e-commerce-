@@ -45,7 +45,7 @@ public class UserServiceImpl implements UserService {
 
             String hashedPassword = BCrypt.hashpw(user.getPassword(), BCrypt.gensalt());
             ps.setString(6, hashedPassword);
-            ps.setString(7, user.getRole());
+            ps.setString(7, "customer");
 
             int k = ps.executeUpdate();
             if (k > 0) {
@@ -105,7 +105,7 @@ public class UserServiceImpl implements UserService {
             if (rs.next()) {
                 String hashedPassword = rs.getString("password");
                 if (BCrypt.checkpw(password, hashedPassword)) {
-                    status = "valid";
+                    status = "Enter the valid email and password";
                 }
             }
 

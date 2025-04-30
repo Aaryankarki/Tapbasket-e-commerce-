@@ -9,11 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
-
-
-
-
 import com.aaryan.beans.UserBean;
 import com.aaryan.service.impl.UserServiceImpl;
 
@@ -48,7 +43,7 @@ public class LoginSrv extends HttpServlet {
 				status = udao.isValidCredential(userName, password);
 //				System.out.println(status);
 
-				if (status.equalsIgnoreCase("valid")) {
+				if (status.equalsIgnoreCase("Enter the valid email and password")) {
 					// valid user
 
 					UserBean user = udao.getUserDetails(userName, password);
@@ -65,7 +60,7 @@ public class LoginSrv extends HttpServlet {
 
 				status = udao1.isValidCredential(userName, password);
 
-				if (status.equalsIgnoreCase("valid")) {
+				if (status.equalsIgnoreCase("Enter the valid email and password")) {
 
 					RequestDispatcher rd = request.getRequestDispatcher("adminViewProduct.jsp");
 
@@ -112,7 +107,7 @@ public class LoginSrv extends HttpServlet {
 //			System.out.println(status);
 
 
-			if (status.equalsIgnoreCase("valid")) {
+			if (status.equalsIgnoreCase("Enter the valid email and password")) {
 				// valid user
 
 				UserBean user = udao.getUserDetails(userName, password);
