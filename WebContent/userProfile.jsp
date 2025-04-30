@@ -120,26 +120,23 @@
 </head>
 
 <body>
-    <% /* Checking the user credentials */ 
-    String userName=(String) session.getAttribute("username"); 
-    String password=(String) session.getAttribute("password"); 
-    if (userName==null || password==null) {
+  <% 
+    /* Checking the user credentials */ 
+    String userName = (String) session.getAttribute("username"); 
+    String password = (String) session.getAttribute("password"); 
+
+    if (userName == null || password == null) {
         response.sendRedirect("login.jsp?message=Session Expired, Login Again!!"); 
     } 
-    
-    UserService dao=new UserServiceImpl(); 
-    UserBean user=dao.getUserDetails(userName, password); 
-    if (user==null) 
-<<<<<<< HEAD
-<<<<<<< HEAD
-        user=new UserBean("Test User", "98765498765L", "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
-=======
-        user=new UserBean("Test User", 98765498765L, "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
->>>>>>> initial1
-=======
-        user=new UserBean("Test User", "98765498765L", "test@gmail.com", "ABC colony, Patna, bihar", 87659, "lksdjf");
->>>>>>> e5f10af91fa136c90abc052ddb243af30588acbc
-    %>
+
+    UserService dao = new UserServiceImpl(); 
+    UserBean user = dao.getUserDetails(userName, password); 
+
+    if (user == null) {
+        user = new UserBean("Test User", "98765498765", "test@gmail.com", "ABC colony, Patna, Bihar", 87659, "lksdjf", "user");
+    }
+%>
+
 
     <jsp:include page="header.jsp" />
 
